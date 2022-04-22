@@ -1,65 +1,18 @@
 <template>
   <div id="app">
-    <Header :screenWidth="$vssWidth"/>
-    <FirstSection :screenWidth="$vssWidth"/>
-    <SecondSection/>
-    <ThirdSection/>
-    <VideoSection/>
-    <FifthSection/>
-    <SixthSection/>
-    <SeventhSection/>
-    <EighthSection/>
-    <NinethSection/>
-    <TenthSection/>
-    <EleventhSection/>
-    <TwelvethSection/>
+    <router-view />
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
-import FirstSection from './components/FirstSection.vue'
-import SecondSection from './components/SecondSection.vue'
-import ThirdSection from './components/ThirdSection.vue'
-import FifthSection from './components/FifthSection.vue'
-import SixthSection from './components/SixthSection.vue'
-import SeventhSection from './components/SeventhSection.vue'
-import EighthSection from './components/EighthSection.vue'
-import NinethSection from './components/NinethSection.vue'
-import TenthSection from './components/TenthSection.vue'
-import EleventhSection from './components/EleventhSection.vue'
-import TwelvethSection from './components/TwelvethSection.vue'
-import VideoSection from './components/VideoSection.vue'
-
 export default {
   name: 'App',
   components: {
-    Header,
-    FirstSection,
-    SecondSection,
-    ThirdSection,
-    FifthSection,
-    SixthSection,
-    SeventhSection,
-    EighthSection,
-    NinethSection,
-    TenthSection,
-    EleventhSection,
-    TwelvethSection,
-    VideoSection
   },
   mounted(){
     console.log("CHECK")
-    console.log(this.$vssWidth)
   },
   methods:{
-    onLanguageChange(){
-      this.$emit()//add parameters
-    },
-    
-    onCallOrder(){
-      this.$emit()//add parameters
-    }
   }
 }
 </script>
