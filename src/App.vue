@@ -94,6 +94,15 @@ textarea {
   padding-top: 160.5px
 }
 
+.icons-div-mobile{
+  width: 95% !important;
+  background-color: #0BBFB8;
+  margin-left: 2.5%;
+  min-height: 627.5px;
+  padding-top: 160.5px;
+  border-radius: 60px
+}
+
 a {
   text-decoration: none !important;
 }
@@ -103,9 +112,7 @@ a {
 }
 
 .text-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  position: relative;
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
@@ -1237,13 +1244,9 @@ input {
 }
 
 .main-page-section2__cover {
-  background-image: url("./assets/38e76f0ce7f76c20a7447960bff440c0.png");
-  position: relative;
-  background-size: 100% 133px;
+  text-align: center;
   height: 133px;
-  margin-left: 27%;
-  width: 48%;
-  background-repeat: no-repeat
+  width: 100%;
 }
 
 .main-page-section3__section3 {
@@ -1356,7 +1359,7 @@ input {
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
-  width: 57.88%;
+  width: 70%;
 }
 
 .main-page-section3__big-title1 {
@@ -2187,7 +2190,7 @@ input {
   border-radius: 21px 21px 21px 21px;
   padding-left: 10px;
   padding-right: 10px;
-  margin-top: 54px;
+  margin-top: 100px;
   padding-bottom: 5;
   padding-top: 5;
 }
@@ -2373,11 +2376,9 @@ input {
 }
 
 .main-page-section5__big-title2 {
-  display: flex;
-  justify-content: flex-end;
+  text-align: center;
   font: 700 32px/1.2 "Open Sans", Helvetica, Arial, serif;
   color: #363745;
-  text-align: right;
   letter-spacing: 0px;
 }
 
@@ -2386,17 +2387,15 @@ input {
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
-  width: 45.62%;
+  width: 80%;
   margin: 0px auto;
   margin-top: 64px
 }
 
 .main-page-section5__highlights6 {
-  display: flex;
-  justify-content: flex-end;
+  text-align: center;
   font: 600 16px/1.2 "Open Sans", Helvetica, Arial, serif;
   color: #363745;
-  text-align: right;
   letter-spacing: 0px;
 }
 
@@ -2405,7 +2404,7 @@ input {
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
-  width: 33.03%;
+  width: 90%;
   margin: 13px auto 0px;
 }
 
@@ -3095,10 +3094,10 @@ input {
   font: 700 32px/1.2 "Open Sans", Helvetica, Arial, serif;
   color: white;
   letter-spacing: 0px;
+  margin-left: 0;
 }
 
 .main-page-section7__big-title.layout {
-  position: relative;
   flex: 0 0 auto;
   height: -webkit-min-content;
   height: -moz-min-content;
@@ -3117,10 +3116,9 @@ input {
 }
 
 .main-page-section7__image9 {
-  background-image: url("./assets/Rectangle295.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 1020px;
+  background-color: #FF5C62;
+  border-radius: 60px;
+  min-height: 1020px;
   width: 100%;
   position: relative
 }
@@ -5219,7 +5217,8 @@ input {
 .main-page-section13__block56 {
   display: flex;
   flex-direction: column;
-  height: 400px;
+  min-height: 400px;
+  
   background-color: #ff5c62;
   box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.0470588);
   border-radius: 20px 20px 20px 20px;

@@ -199,9 +199,9 @@
         </div>
         </div>
         <div class="main-page-section2__block7 layout">
-        <div class="main-page-section2__decorator2" style="margin-top: 64px;">
+        <div class="main-page-section2__decorator2" :style="{marginTop : '64px', 'background-size': [screnWidth > 750 ? '100% 100%' : '100% 150%']}">
             <div class="main-page-section2__flex2">
-                <div style="position: absolute; left: -300px; top: 254.36px">
+                <div v-if="screenWidth > 740" style="position: absolute; left: -300px; top: 254.36px">
                     <img src="@/assets/8c7f029b42cb4a5c0592828733a47a54.png" alt="can't load">
                 </div>
                 <b-container fluid>
@@ -277,13 +277,13 @@
                     </b-row>
                     <b-row v-if="screenWidth < 770">
                         <div>
-                            <b-row>
+                            <b-row style="margin-top: 48px">
                                   <img src="@/assets/661f8217d5c41479d94c6b82d7ee3f1f.png" alt="can't load" class="main-page-section2__icon21 layout">
                                   <h3 class="main-page-section2__subtitle1 layout">
                                       Диплом международного образца
                                   </h3>
                             </b-row>
-                            <b-row>
+                            <b-row style="margin-top: 48px">
                                 <img src="@/assets/661f8217d5c41479d94c6b82d7ee3f1f.png" alt="can't load" class="main-page-section2__icon21 layout">
                                 <h3 class="main-page-section2__subtitle1 layout">
                                     Лучшие ВУЗы с рейтингом А+
@@ -291,31 +291,31 @@
                             </b-row>
 
 
-                            <b-row>
+                            <b-row style="margin-top: 48px">
                                 <img src="@/assets/e07c1a1b192529472b0c7c29824365f6.png" alt="can't load" class="main-page-section2__icon22 layout">
                                 <h3 class="main-page-section2__subtitle1 layout">
                                     Квалифицированные преподаватели
                                 </h3>
                             </b-row>
-                            <b-row>
+                            <b-row style="margin-top: 48px">
                                 <img src="@/assets/5fda943cbd26f5453474b9edf56e7079.png" alt="can't load" class="main-page-section2__icon23 layout">
                                 <h3 class="main-page-section2__subtitle1 layout">
                                     Перспективы работы за границей
                                 </h3>
                             </b-row>
-                            <b-row>
-                                <div>
-                                    <img src="@/assets/ba384b8c3c499b48b592a83460c2a24c.png" alt="can't load" class="main-page-section2__icon24 layout">
-                                    <h3 class="main-page-section2__subtitle1 layout1">
-                                        Красивейшие пляжи, круизы
-                                    </h3>
-                                </div>
-                                <div>
-                                    <img src="@/assets/24050785a7e00994eb4517b3f8b1feaf.png" alt="can't load" class="main-page-section2__icon25 layout">
-                                    <h3 class="main-page-section2__subtitle1 layout2">
-                                        Красочные места для дайвинга
-                                    </h3>
-                                </div>
+                            <b-row style="margin-top: 48px">
+                                
+                                <img src="@/assets/ba384b8c3c499b48b592a83460c2a24c.png" alt="can't load" class="main-page-section2__icon24 layout">
+                                <h3 class="main-page-section2__subtitle1 layout1">
+                                    Красивейшие пляжи, круизы
+                                </h3>
+                               
+                            </b-row>
+                            <b-row style="margin-top: 48px">
+                                <img src="@/assets/24050785a7e00994eb4517b3f8b1feaf.png" alt="can't load" class="main-page-section2__icon25 layout">
+                                <h3 class="main-page-section2__subtitle1 layout2">
+                                    Красочные места для дайвинга
+                                </h3>
                             </b-row>
                         </div>
                     </b-row>
@@ -330,12 +330,24 @@
 <script>
 export default {
     name: "FirstSection",
+    mounted () {
+        console.log('url('+ this.whyImage+')')
+    },
     props:{
         screenWidth: {
             type: Number,
             required: true
         }
     },
+    computed: {
+        whyImage () {
+            if (this.screenWidth > 750){
+                return "'./assets/de5739ab189944ff81ae0880199d0d1d.png'"
+            }else{
+                return "'./assets/rectangle_mobile.png'"
+            }
+        }
+    }
 }
 </script>
 

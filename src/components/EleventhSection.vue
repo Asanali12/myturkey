@@ -11,13 +11,19 @@
             720 студентов
             </span>
         </h5>
-        <img src="@/assets/Frame 46.png" alt="couldn't load" class="branches-img">
+        <img src="@/assets/Frame 46.png" alt="couldn't load" style="width: 80%" class="branches-img" v-if="screenWidth > 700">
+        <img src="@/assets/Frame 46.png" alt="couldn't load" style="width: 100%" class="branches-img" v-if="screenWidth <= 700">
     </b-container>
 </template>
 
 <script>
 export default {
-
+    props:{
+        screenWidth: {
+            type: Number,
+            required: true
+        }
+    },
 }
 </script>
 

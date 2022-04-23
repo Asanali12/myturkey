@@ -7,20 +7,20 @@
             <slide>
                 <b-row>
                     <b-col>
-                        <img src="@/assets/ba31b1b784541bf8d1b6481ad4d09b0b.png" alt="couldn't load">
+                        <img src="@/assets/ba31b1b784541bf8d1b6481ad4d09b0b.png" style="width: 100%" alt="couldn't load">
                     </b-col>
                     <b-col>
-                        <img src="@/assets/02e0728b4877187d9b8a3ea89125433b.png" alt="couldn't load">
+                        <img src="@/assets/02e0728b4877187d9b8a3ea89125433b.png" style="width: 100%" alt="couldn't load">
                     </b-col>
                 </b-row>
             </slide>
             <slide>
                 <b-row>
                     <b-col>
-                        <img src="@/assets/889608cea81990fb1d19ba5ae519e10a.png" alt="couldn't load">
+                        <img src="@/assets/889608cea81990fb1d19ba5ae519e10a.png" style="width: 100%" alt="couldn't load">
                     </b-col>
                     <b-col>
-                        <img src="@/assets/dab5a0d84bb45a07bb60aa00d8e19194.png" alt="couldn't load">
+                        <img src="@/assets/dab5a0d84bb45a07bb60aa00d8e19194.png" style="width: 100%" alt="couldn't load">
                     </b-col>
                 </b-row>
             </slide>

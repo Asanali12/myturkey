@@ -2,17 +2,17 @@
   <div id="app">
     <Header :screenWidth="$vssWidth"/>
     <FirstSection :screenWidth="$vssWidth"/>
-    <SecondSection/>
-    <ThirdSection/>
+    <SecondSection :screenWidth="$vssWidth"/>
+    <ThirdSection :screenWidth="$vssWidth"/>
     <VideoSection/>
-    <FifthSection/>
-    <SixthSection/>
-    <SeventhSection/>
-    <EighthSection/>
-    <NinethSection/>
+    <FifthSection :screenWidth="$vssWidth"/>
+    <SixthSection :screenWidth="$vssWidth"/>
+    <SeventhSection :screenWidth="$vssWidth"/>
+    <EighthSection :screenWidth="$vssWidth"/>
+    <NinethSection :screenWidth="$vssWidth"/>
     <TenthSection/>
-    <EleventhSection/>
-    <TwelvethSection/>
+    <EleventhSection :screenWidth="$vssWidth"/>
+    <TwelvethSection :screenWidth="$vssWidth"/>
   </div>
 </template>
 
