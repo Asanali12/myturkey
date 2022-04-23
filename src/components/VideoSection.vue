@@ -7,8 +7,7 @@
             Лучшие таланты поступают через нашу компанию!
         </h5>
         <img src="@/assets/Rectangle 295.png" alt="couldn't load" class="video-section-container" >
-        <b-row style="margin-top: 16px">
-            <b-col>
+        <div style="margin-top: 16px" class="video-row-wrapper">
                 <div class="video-div">
                     <youtube :video-id="firstVideoId" :fitParent="true"></youtube>
                     <div class="video-description">
@@ -22,8 +21,6 @@
                         </span>
                     </div>
                 </div>
-            </b-col>
-            <b-col>
                 <div class="video-div">
                     <youtube :video-id="secondVideoId" :fitParent="true"></youtube>
                     <div class="video-description">
@@ -32,10 +29,8 @@
                         </span>
                     </div>
                 </div>
-            </b-col>
-        </b-row>
-        <b-row style="margin-top: 16px">
-            <b-col>
+        </div>
+        <div style="margin-top: 16px" class="video-row-wrapper">
                 <div class="video-div">
                     <youtube :video-id="thirdVideoId" :fitParent="true"></youtube>
                     <div class="video-description">
@@ -44,8 +39,6 @@
                         </span>
                     </div>
                 </div>
-            </b-col>
-            <b-col>
                 <div class="video-div">
                     <youtube :video-id="sixthVideoId" :fitParent="true"></youtube>
                     <div class="video-description">
@@ -54,8 +47,7 @@
                         </span>
                     </div>
                 </div>
-            </b-col>
-        </b-row>
+        </div>
         <div>
             <h2 class="main-page-section5__medium-title">
                 Отзывы наших студентов
@@ -64,8 +56,7 @@
                 Лучшие таланты поступают через нашу компанию!
             </h5>
         </div>
-        <b-row>
-            <b-col>
+        <div class="video-row-wrapper">
                 <div class="video-div">
                     <youtube :video-id="fourthVideoId" :fitParent="true"></youtube>
                     <div class="video-description">
@@ -77,8 +68,6 @@
                         </span>
                     </div>
                 </div>
-            </b-col>
-            <b-col>
                 <div class="video-div">
                     <youtube :video-id="fifthVideoId" :fitParent="true"></youtube>
                     <div class="video-description">
@@ -90,8 +79,7 @@
                         </span>
                     </div>
                 </div>
-            </b-col>
-        </b-row>
+        </div>
     </b-container>
 </template>
 

@@ -264,11 +264,11 @@
                     </b-row>
 
                     <b-row v-if="screenWidth < 770">
-                        <b-col>
-                            <h1 class="main-page-section2__big-title" style="text-align: left">
+                        <b-col class="why-turkey">
+                            <h1 class="main-page-section2__big-title" style="text-align: center; margin-top: 16px">
                                 <p>Почему учиться</p>в Турции?
                             </h1>
-                            <button class="main-page-section2__block8" style="margin-top: 42px">
+                            <button class="main-page-section2__block8" style="margin-top: 22px">
                                 <h5 class="main-page-section2__highlights5 layout">
                                     Оставить заявку
                                 </h5>
@@ -276,51 +276,48 @@
                         </b-col>
                     </b-row>
                     <b-row v-if="screenWidth < 770">
-                        <b-col>
+                        <div>
                             <b-row>
-                                <b-col>
-                                    <img src="@/assets/661f8217d5c41479d94c6b82d7ee3f1f.png" alt="can't load" class="main-page-section2__icon21 layout">
-                                    <h3 class="main-page-section2__subtitle1 layout">
-                                        Диплом международного образца
-                                    </h3>
-                                </b-col>
-                                <b-col>
-                                    <img src="@/assets/661f8217d5c41479d94c6b82d7ee3f1f.png" alt="can't load" class="main-page-section2__icon21 layout">
-                                    <h3 class="main-page-section2__subtitle1 layout">
-                                        Лучшие ВУЗы с рейтингом А+
-                                    </h3>
-                                </b-col>
-                                
+                                  <img src="@/assets/661f8217d5c41479d94c6b82d7ee3f1f.png" alt="can't load" class="main-page-section2__icon21 layout">
+                                  <h3 class="main-page-section2__subtitle1 layout">
+                                      Диплом международного образца
+                                  </h3>
                             </b-row>
-                            <b-row style="margin-top: 80px">
-                                <b-col>
-                                    <img src="@/assets/e07c1a1b192529472b0c7c29824365f6.png" alt="can't load" class="main-page-section2__icon22 layout">
-                                    <h3 class="main-page-section2__subtitle1 layout">
-                                        Квалифицированные преподаватели
-                                    </h3>
-                                </b-col>
-                                <b-col>
-                                    <img src="@/assets/5fda943cbd26f5453474b9edf56e7079.png" alt="can't load" class="main-page-section2__icon23 layout">
-                                    <h3 class="main-page-section2__subtitle1 layout">
-                                        Перспективы работы за границей
-                                    </h3>
-                                </b-col>
+                            <b-row>
+                                <img src="@/assets/661f8217d5c41479d94c6b82d7ee3f1f.png" alt="can't load" class="main-page-section2__icon21 layout">
+                                <h3 class="main-page-section2__subtitle1 layout">
+                                    Лучшие ВУЗы с рейтингом А+
+                                </h3>
                             </b-row>
-                            <b-row style="margin-top: 80px">
-                                <b-col>
+
+
+                            <b-row>
+                                <img src="@/assets/e07c1a1b192529472b0c7c29824365f6.png" alt="can't load" class="main-page-section2__icon22 layout">
+                                <h3 class="main-page-section2__subtitle1 layout">
+                                    Квалифицированные преподаватели
+                                </h3>
+                            </b-row>
+                            <b-row>
+                                <img src="@/assets/5fda943cbd26f5453474b9edf56e7079.png" alt="can't load" class="main-page-section2__icon23 layout">
+                                <h3 class="main-page-section2__subtitle1 layout">
+                                    Перспективы работы за границей
+                                </h3>
+                            </b-row>
+                            <b-row>
+                                <div>
                                     <img src="@/assets/ba384b8c3c499b48b592a83460c2a24c.png" alt="can't load" class="main-page-section2__icon24 layout">
                                     <h3 class="main-page-section2__subtitle1 layout1">
                                         Красивейшие пляжи, круизы
                                     </h3>
-                                </b-col>
-                                <b-col>
+                                </div>
+                                <div>
                                     <img src="@/assets/24050785a7e00994eb4517b3f8b1feaf.png" alt="can't load" class="main-page-section2__icon25 layout">
                                     <h3 class="main-page-section2__subtitle1 layout2">
                                         Красочные места для дайвинга
                                     </h3>
-                                </b-col>
+                                </div>
                             </b-row>
-                        </b-col>
+                        </div>
                     </b-row>
                 </b-container>
             </div>
