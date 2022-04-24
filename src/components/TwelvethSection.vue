@@ -55,7 +55,7 @@
                     </div>
                 </b-col>
                 <b-col cols="7">
-                    <h1 class="main-page-section13__hero-title1">
+                    <h1 class="main-page-section13__hero-title1" id="main-lead-form">
                     Оставьте заявку
                     </h1>
                     <h5 class="main-page-section13__highlights1">
@@ -84,7 +84,7 @@
 
             <div v-if="screenWidth <= 1500">
                 <b-row>
-                    <h1 class="main-page-section13__hero-title1">
+                    <h1 class="main-page-section13__hero-title1" id="main-lead-form">
                     Оставьте заявку
                     </h1>
                     <h5 class="main-page-section13__highlights1">

@@ -17,7 +17,7 @@
                             Marmara Universitesi
                         </b-col>
                         <b-col>
-                            <a href="#">
+                            <a href="#main-lead-form">
                                 <h5 class="main-page-section6__highlights5">
                                     Узнать стоимость
                                 </h5>
@@ -39,7 +39,7 @@
                             Dokuz Eylul Universitesi
                         </b-col>
                         <b-col>
-                            <a href="#">
+                            <a href="#main-lead-form">
                                 <h5 class="main-page-section6__highlights5">
                                     Узнать стоимость
                                 </h5>
@@ -61,7 +61,7 @@
                             Ege University
                         </b-col>
                         <b-col>
-                            <a href="#" class="price-link main-page-section6__highlights5">
+                            <a href="#main-lead-form" class="price-link main-page-section6__highlights5">
                                 Узнать стоимость
                             </a>
                         </b-col>
@@ -84,7 +84,7 @@
                             Marmara Universitesi
                         </b-col>
                         <b-col>
-                            <a href="#">
+                            <a href="#main-lead-form">
                                 <h5 class="main-page-section6__highlights5">
                                     Узнать стоимость
                                 </h5>
@@ -106,7 +106,7 @@
                             Dokuz Eylul Universitesi
                         </b-col>
                         <b-col>
-                            <a href="#">
+                            <a href="#main-lead-form">
                                 <h5 class="main-page-section6__highlights5">
                                     Узнать стоимость
                                 </h5>
@@ -128,7 +128,7 @@
                             Ege University
                         </b-col>
                         <b-col>
-                            <a href="#" class="price-link main-page-section6__highlights5">
+                            <a href="#main-lead-form" class="price-link main-page-section6__highlights5">
                                 Узнать стоимость
                             </a>
                         </b-col>
@@ -152,7 +152,7 @@
                             Marmara Universitesi
                         </b-col>
                         <b-col>
-                            <a href="#">
+                            <a href="#main-lead-form">
                                 <h5 class="main-page-section6__highlights5">
                                     Узнать стоимость
                                 </h5>
@@ -174,7 +174,7 @@
                             Dokuz Eylul Universitesi
                         </b-col>
                         <b-col>
-                            <a href="#">
+                            <a href="#main-lead-form">
                                 <h5 class="main-page-section6__highlights5">
                                     Узнать стоимость
                                 </h5>
@@ -196,7 +196,7 @@
                             Ege University
                         </b-col>
                         <b-col>
-                            <a href="#" class="price-link main-page-section6__highlights5">
+                            <a href="#main-lead-form" class="price-link main-page-section6__highlights5">
                                 Узнать стоимость
                             </a>
                         </b-col>

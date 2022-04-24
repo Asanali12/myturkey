@@ -217,7 +217,7 @@
                     </div>
                 </h3>
         </b-row>
-        <a href="#">
+        <a href="#main-lead-form">
             <button class="main-page-section4__block17">
             <h5 class="main-page-section4__highlights5">
                 Подобрать лучший университет

@@ -3,7 +3,7 @@
     <b-row class="main-page-section1__block61" align-v="center">
         <b-col cols="9" class="d-flex justify-content-start">
             <div class="brand-logo">
-                <a class="no-style-link" href="#">
+                <a class="no-style-link" href="https://www.myturkey.kz/">
                     <img src="@/assets/7dda7bf1a15901ed4e4201b183666df5.png" alt="can't load" class="main-page-section1__image43 layout">
                 </a>
             </div>
@@ -37,11 +37,13 @@
             </div>
         </b-col>
         <b-col v-if="screenWidth > 1400" cols="2" class="d-flex justify-content-end">
-            <button class="main-page-section1__block63 layout">
+            <a href="#main-lead-form">
+                <button class="main-page-section1__block63 layout">
                 <h5 class="main-page-section1__highlights4 layout">
                     Заказать обратный звонок
                 </h5>
             </button>
+            </a>
         </b-col>
     </b-row>
 </template>

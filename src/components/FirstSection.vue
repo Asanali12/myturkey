@@ -211,7 +211,7 @@
                                 <p>Почему учиться</p>в Турции?
                             </h1>
 
-                            <a href="#"><button class="main-page-section2__block8" style="margin-top: 42px">
+                            <a href="#main-lead-form"><button class="main-page-section2__block8" style="margin-top: 42px">
                                 <h5 class="main-page-section2__highlights5 layout">
                                     Оставить заявку
                                 </h5>
@@ -269,7 +269,7 @@
                             <h1 class="main-page-section2__big-title" style="text-align: center; margin-top: 16px">
                                 <p>Почему учиться</p>в Турции?
                             </h1>
-                            <a href="#"><button class="main-page-section2__block8" style="margin-top: 22px">
+                            <a href="#main-lead-form"><button class="main-page-section2__block8" style="margin-top: 22px">
                                 <h5 class="main-page-section2__highlights5 layout">
                                     Оставить заявку
                                 </h5>
