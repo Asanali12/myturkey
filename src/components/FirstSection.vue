@@ -59,42 +59,83 @@
                 </b-col>
             </b-row>
 
-            <b-row v-if="screenWidth <= 650" style="margin-top: 32px !important">
+            <b-row v-if="screenWidth <= 650 && screenWidth > 480" style="margin-top: 32px !important;">
                 <b-col cols="1" class="mx-0 px-0">
                     <div>
                         <img src="@/assets/2128a9054fb7bdab53713f2adddda56d.png" alt="can't load" class="main-page-section2__icon2">
                     </div>
                 </b-col>
-                <b-col cols="5" class="mx-0 px-0 d-flex justify-content-start align-items-start">
+                <b-col cols="11" class="mx-0 px-0 d-flex justify-content-start align-items-start">
                     <h5 class="main-page-section2__highlights">
                         100% Гарантия поступления
                     </h5>
                 </b-col>
             </b-row>
-            <b-row v-if="screenWidth <= 650">
+            <b-row v-if="screenWidth <= 650 && screenWidth > 480">
                 <b-col cols="1" class="mx-0 px-0">
                     <div>
                         <img src="@/assets/2128a9054fb7bdab53713f2adddda56d.png" alt="can't load" class="main-page-section2__icon2">
                     </div>
                 </b-col>
-                <b-col cols="5" class="mx-0 px-0 d-flex justify-content-start align-items-start">
+                <b-col cols="11" class="mx-0 px-0 d-flex justify-content-start align-items-start">
                     <h5 class="main-page-section2__highlights">
                         Без ЕНТ/КТА/YOS
                     </h5>
                 </b-col>
             </b-row>
-            <b-row v-if="screenWidth <= 650">
+            <b-row v-if="screenWidth <= 650 && screenWidth > 480">
                 <b-col cols="1" class="mx-0 px-0">
                     <div>
                         <img src="@/assets/2128a9054fb7bdab53713f2adddda56d.png" alt="can't load" class="main-page-section2__icon2">
                     </div>
                 </b-col>
-                <b-col cols="5" class="mx-0 px-0 d-flex justify-content-start align-items-start ">
+                <b-col cols="11" class="mx-0 px-0 d-flex justify-content-start align-items-start ">
                     <h5 class="main-page-section2__highlights">
                         Без знания Английского / Турецкого
                     </h5>
                 </b-col>
             </b-row>
+
+            <b-row v-if="screenWidth <= 480" style=" margin-top: 164px !important;">
+                <b-col cols="1" class="mx-0 px-0">
+                    <div>
+                        <img src="@/assets/2128a9054fb7bdab53713f2adddda56d.png" alt="can't load" class="main-page-section2__icon2">
+                    </div>
+                </b-col>
+                <b-col cols="11" class="mx-0 px-0 d-flex justify-content-start align-items-start">
+                    <h5 class="main-page-section2__highlights">
+                        100% Гарантия поступления
+                    </h5>
+                </b-col>
+            </b-row>
+            <b-row v-if="screenWidth <= 480" >
+                <b-col cols="1" class="mx-0 px-0">
+                    <div>
+                        <img src="@/assets/2128a9054fb7bdab53713f2adddda56d.png" alt="can't load" class="main-page-section2__icon2">
+                    </div>
+                </b-col>
+                <b-col cols="11" class="mx-0 px-0 d-flex justify-content-start align-items-start">
+                    <h5 class="main-page-section2__highlights">
+                        Без ЕНТ/КТА/YOS
+                    </h5>
+                </b-col>
+            </b-row>
+
+            <b-row v-if="screenWidth <= 480">
+                <b-col cols="1" class="mx-0 px-0">
+                    <div>
+                        <img src="@/assets/2128a9054fb7bdab53713f2adddda56d.png" alt="can't load" class="main-page-section2__icon2">
+                    </div>
+                </b-col>
+                <b-col cols="11" class="mx-0 px-0 d-flex justify-content-start align-items-start ">
+                    <h5 class="main-page-section2__highlights">
+                        Без знания Английского / Турецкого
+                    </h5>
+                </b-col>
+            </b-row>
+
+
+
 
             <div class="px-0 mx-0 d-flex justify-content-start align-items-start" style="margin-top: 64px">
                 <h5 class="main-page-section2__highlights1">
@@ -154,7 +195,7 @@
                 </b-col>
             </b-row>
 
-            <div v-if="screenWidth <= 650" style="margin-top: 32px">
+            <div v-if="screenWidth <= 650" style="margin-top: 32px;">
                 <b-row style="width: 95%">
                     <b-col>
                         <input type="text" placeholder="Ваше имя" class="main-page-section2__block3" v-model="name"/>
@@ -182,21 +223,22 @@
 
         <div v-if="screenWidth > 1450" class="main-page-section2__block6 layout my-0">
             <div>
-                <img src="@/assets/9a32b0131e88487182ed4cbd79f68ac3.png" alt="can't load" class="main-page-section2__image1 layout">
+                <img src="@/assets/main-pic.png" alt="can't load" class="main-page-section2__image1 layout">
             </div>
+        </div>
 
+        <div v-if="screenWidth <= 1450 && screenWidth > 890" class="main-page-section2__block6 layout my-0" style="top: 5%; right: 0">
             <div>
-                <img src="@/assets/43dfefe5da71848a54384f54cfd8811c.png" alt="can't load" class="main-page-section2__image1 layout1">
+                <img src="@/assets/main-pic.png" alt="can't load" class="main-page-section2__image1 layout" style="height: 60% !important;">
             </div>
+        </div>
 
+        <div v-if="screenWidth <= 890" class="main-page-section2__block6 layout my-0" style="top: 10%; z-index: -100">
             <div>
-                <img src="@/assets/cae53c4cfaf252a227f442316e49ce78.png" alt="can't load" class="main-page-section2__decorator1 layout">
+                <img src="@/assets/mobile-trio.png" alt="can't load" class="main-page-section2__image1 layout" style="height: auto !important;"> 
             </div>
         </div>
         <!-- section split -->
-        <div>
-            <img src="@/assets/0319aa7b73be1b01ebfe4486ab3a6544.png" alt="can't load" class="main-page-section2__image2 layout">
-        </div>
         </div>
         <div class="main-page-section2__block7 layout">
         <div class="main-page-section2__decorator2" :style="{marginTop : '64px', 'background-size': [screnWidth > 750 ? '100% 100%' : '100% 150%']}">

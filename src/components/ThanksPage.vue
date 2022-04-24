@@ -26,6 +26,8 @@
     </b-container>
 </template>
 
+
+
 <script>
 export default {
     name: "ThanksPage",

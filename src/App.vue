@@ -776,30 +776,19 @@ input {
   position: absolute;
   overflow: hidden;
   top: 0px;
-  height: 590px;
-  right: 10%;
-  width: 686px;
+  height: 100%;
+  right: 0px;
+  width: auto
 }
 
 .main-page-section2__image1 {
-  height: 454px;
-  width: 214px;
-}
-
-.main-page-section2__image1.layout {
-  position: absolute;
-  top: 42px;
-  height: 454px;
-  right: 460px;
-  width: 214px;
+  height: 100%;
+  width: auto;
+  float: right
 }
 
 .main-page-section2__image1.layout1 {
-  position: absolute;
-  top: 42px;
-  height: 454px;
-  right: 14px;
-  width: 214px;
+  float: right
 }
 
 .main-page-section2__decorator1 {
