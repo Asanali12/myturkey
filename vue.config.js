@@ -1,12 +1,6 @@
 module.exports = {
     devServer: {
-        proxy: {
-            "https://aurorainc.amocrm.ru":{
-                "target" : "https://aurorainc.amocrm.ru",
-                "changeOrigin": true,
-                "secure": false
-            }
-        },
+        proxy: "https://heartfelt-crumble-fdad9d.netlify.app/",
         headers: {
             'Access-Control-Allow-Origin': "*" 
         }

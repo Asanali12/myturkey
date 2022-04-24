@@ -92,6 +92,7 @@ export default {
             thirdVideoId: null,
             fourthVideoId: null,
             fifthVideoId: null,
+            sixthVideoId: null
         }
     },
     mounted () {

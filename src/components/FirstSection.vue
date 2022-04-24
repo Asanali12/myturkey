@@ -104,7 +104,7 @@
             <b-row :style="[screenWidth > 1450 ? 'width: 25%; margin-top: 16px;': 'width: 243px; margin-top: 16px;']" class="px-0 mx-0">
                 <b-col class="px-0 mx-0">
                     <div class="main-page-section2__block2">
-                        12
+                        6
                     </div>
                     <div class="main-page-section2__text-body">Дней</div>
                 </b-col>
@@ -132,7 +132,7 @@
                 </b-col>
                 <b-col class="px-0 mx-0">
                     <div class="main-page-section2__block2">
-                        12
+                        00
                     </div>
                     <div class="main-page-section2__text-body">Минут</div>
                 </b-col>
@@ -140,13 +140,13 @@
 
             <b-row v-if="screenWidth > 650" style="margin-top: 24px; width: 80%" align-v="center">
                 <b-col>
-                    <input type="text" placeholder="Ваше имя" class="main-page-section2__block3"/>
+                    <input type="text" placeholder="Ваше имя" class="main-page-section2__block3" v-model="name"/>
                 </b-col>
                 <b-col>
-                    <input type="text" placeholder="Номер телефона" class="main-page-section2__block3"/>
+                    <input type="text" placeholder="Номер телефона" class="main-page-section2__block3" v-model="phone"/>
                 </b-col>
                 <b-col>
-                    <button class="main-page-section1__block63 layout">
+                    <button class="main-page-section1__block63 layout" @click="sendRequest">
                         <h5 class="main-page-section1__highlights4 layout">
                             Оставить заявку
                         </h5>
@@ -157,17 +157,17 @@
             <div v-if="screenWidth <= 650" style="margin-top: 32px">
                 <b-row style="width: 95%">
                     <b-col>
-                        <input type="text" placeholder="Ваше имя" class="main-page-section2__block3"/>
+                        <input type="text" placeholder="Ваше имя" class="main-page-section2__block3" v-model="name"/>
                     </b-col>
                 </b-row>
                 <b-row style="width: 95%; margin-top: 32px">
                     <b-col>
-                        <input type="text" placeholder="Номер телефона" class="main-page-section2__block3"/>
+                        <input type="text" placeholder="Номер телефона" class="main-page-section2__block3" v-model="phone"/>
                     </b-col>
                 </b-row>
                 <b-row style="width: 95%; margin-top: 32px">
                     <b-col class="d-flex justify-content-center align-items-center" style="justify-content: center !important">
-                        <button class="main-page-section1__block63 layout">
+                        <button class="main-page-section1__block63 layout" @click="sendRequest">
                             <h5 class="main-page-section1__highlights4 layout">
                                 Оставить заявку
                             </h5>
@@ -210,11 +210,12 @@
                             <h1 class="main-page-section2__big-title" style="text-align: left">
                                 <p>Почему учиться</p>в Турции?
                             </h1>
-                            <button class="main-page-section2__block8" style="margin-top: 42px">
+
+                            <a href="#"><button class="main-page-section2__block8" style="margin-top: 42px">
                                 <h5 class="main-page-section2__highlights5 layout">
                                     Оставить заявку
                                 </h5>
-                            </button>
+                            </button></a>
                         </b-col>
                         <b-col>
                             <b-row>
@@ -268,11 +269,11 @@
                             <h1 class="main-page-section2__big-title" style="text-align: center; margin-top: 16px">
                                 <p>Почему учиться</p>в Турции?
                             </h1>
-                            <button class="main-page-section2__block8" style="margin-top: 22px">
+                            <a href="#"><button class="main-page-section2__block8" style="margin-top: 22px">
                                 <h5 class="main-page-section2__highlights5 layout">
                                     Оставить заявку
                                 </h5>
-                            </button>
+                            </button></a>
                         </b-col>
                     </b-row>
                     <b-row v-if="screenWidth < 770">
@@ -328,8 +329,15 @@
 </template>
 
 <script>
+import axios from 'axios';
 export default {
     name: "FirstSection",
+    data () {
+        return {
+            name: "",
+            phone: ""
+        }
+    },
     mounted () {
         console.log('url('+ this.whyImage+')')
     },
@@ -337,6 +345,29 @@ export default {
         screenWidth: {
             type: Number,
             required: true
+        }
+    },
+    methods: {
+        async sendRequest () {
+            const body = {
+                name: this.name,
+                phone: this.phone
+            }
+            const res = axios.post("https://heartfelt-crumble-fdad9d.netlify.app/.netlify/functions/app/request", body,
+            {
+                headers:{
+                    'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept, Access-Control-Allow-Origin',
+                    'Access-Control-Allow-Methods': 'POST, OPTIONS',
+                    'Access-Control-Max-Age': '8640',
+                    'Access-Control-Allow-Origin' : "*",
+                    'Vary' : 'Origin'
+                }
+            })
+            if (res != null) {
+                this.$router.push("/thanks")
+            }else{
+                console.log("error")
+            }
         }
     },
     computed: {

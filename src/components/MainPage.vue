@@ -49,8 +49,6 @@ export default {
     VideoSection
   },
   mounted(){
-    console.log("CHECK")
-    console.log(this.$vssWidth)
   },
   methods:{
     onLanguageChange(){

@@ -31,7 +31,7 @@
                         </div>
                         <b-row style="width: 74%">
                             <b-col>
-                                <a href="#">
+                                <a href="https://instagram.com/my_turkey.kz?igshid=YmMyMTA2M2Y=">
                                     <img src="@/assets/socials.png" alt="couldn't load">
                                 </a>
                             </b-col>
@@ -46,7 +46,7 @@
                                 </a>
                             </b-col>
                             <b-col>
-                                <a href="#">
+                                <a href="https://youtube.com/c/MyTurkey_kz">
                                     <img src="@/assets/youtube.png" alt="couldn't load">
                                 </a>
                             </b-col>
@@ -64,16 +64,16 @@
                     </h5>
                     <b-row style="margin-top: 24px">
                         <b-col>
-                            <input type="text" placeholder="Ваше имя" class="main-page-section2__block3"/>
+                            <input type="text" placeholder="Ваше имя" class="main-page-section2__block3" v-model="name"/>
                         </b-col>
                         <b-col>
-                            <input type="text" placeholder="Номер телефона" class="main-page-section2__block3"/>
+                            <input type="text" placeholder="Номер телефона" class="main-page-section2__block3" v-model="phone"/>
                         </b-col>
                     </b-row>
                     <textarea placeholder="Ваш вопрос (если имеется)" rows="3" class="main-page-section2__block3" style="resize: none; outline: none; padding-top: 12px; margin-top: 16px">
 
                     </textarea>
-                    <button class="main-page-section1__block63 layout" style="margin-top: 52px">
+                    <button class="main-page-section1__block63 layout" style="margin-top: 52px" @click="sendRequest">
                         <h5 class="main-page-section1__highlights4 layout">
                             Оставить заявку
                         </h5>
@@ -92,17 +92,17 @@
                     компании
                     </h5>
                     <b-row style="margin-top: 24px">
-                        <input type="text" placeholder="Ваше имя" class="main-page-section2__block3"/>
+                        <input type="text" placeholder="Ваше имя" class="main-page-section2__block3" v-model="name"/>
                     </b-row>
                     <b-row style="margin-top: 24px">
-                        <input type="text" placeholder="Номер телефона" class="main-page-section2__block3"/>
+                        <input type="text" placeholder="Номер телефона" class="main-page-section2__block3" v-model="phone"/>
                     </b-row>
                     <b-row>
                         <textarea placeholder="Ваш вопрос (если имеется)" rows="3" class="main-page-section2__block3" style="resize: none; outline: none; padding-top: 12px; margin-top: 16px">
 
                     </textarea>
                     </b-row>
-                    <button class="main-page-section1__block63 layout" style="margin-top: 52px">
+                    <button class="main-page-section1__block63 layout" style="margin-top: 52px" @click="sendRequest">
                         <h5 class="main-page-section1__highlights4 layout">
                             Оставить заявку
                         </h5>
@@ -137,7 +137,7 @@
                         </div>
                          <b-row >
                             <b-col cols="3">
-                                <a href="#">
+                                <a href="https://instagram.com/my_turkey.kz?igshid=YmMyMTA2M2Y=">
                                     <img src="@/assets/socials.png" alt="couldn't load">
                                 </a>
                             </b-col>
@@ -152,7 +152,7 @@
                                 </a>
                             </b-col>
                             <b-col cols="3">
-                                <a href="#">
+                                <a href="https://youtube.com/c/MyTurkey_kz">
                                     <img src="@/assets/youtube.png" alt="couldn't load">
                                 </a>
                             </b-col>
@@ -165,11 +165,42 @@
 </template>
 
 <script>
+import axios from 'axios';
+
 export default {
+    data () {
+        return {
+            name: "",
+            phone: ""
+        }
+    },
     props: {
         screenWidth: {
             type: Number,
             required: true
+        }
+    },
+    methods:{
+        async sendRequest () {
+            const body = {
+                name: this.name,
+                phone: this.phone
+            }
+            const res = axios.post("https://heartfelt-crumble-fdad9d.netlify.app/.netlify/functions/app/request", body,
+            {
+                headers:{
+                    'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept, Access-Control-Allow-Origin',
+                    'Access-Control-Allow-Methods': 'POST, OPTIONS',
+                    'Access-Control-Max-Age': '8640',
+                    'Access-Control-Allow-Origin' : "*",
+                    'Vary' : 'Origin'
+                }
+            })
+            if (res != null) {
+                this.$router.push("/thanks")
+            }else{
+                console.log("error")
+            }
         }
     }
 }

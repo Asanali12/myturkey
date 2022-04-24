@@ -217,11 +217,13 @@
                     </div>
                 </h3>
         </b-row>
-        <button class="main-page-section4__block17">
+        <a href="#">
+            <button class="main-page-section4__block17">
             <h5 class="main-page-section4__highlights5">
                 Подобрать лучший университет
             </h5>
         </button>
+        </a>
 </b-container>
 </div>
 </template>
