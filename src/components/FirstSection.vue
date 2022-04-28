@@ -227,7 +227,7 @@
             </div>
         </div>
 
-        <div v-if="screenWidth <= 1450 && screenWidth > 890" class="main-page-section2__block6 layout my-0" style="top: 5%; right: 0">
+        <div v-if="screenWidth <= 1450 && screenWidth > 890" class="main-page-section2__block6 layout my-0" style="top: 5%; right: 0; height: 360px !important">
             <div>
                 <img src="@/assets/main-pic.png" alt="can't load" class="main-page-section2__image1 layout" style="height: 60% !important;">
             </div>
